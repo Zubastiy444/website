@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Настоящая ювелирная магия</title>
+  <link rel="stylesheet" href="./CSS/style.css" />
+  <link rel="icon" href="./ICON/icon.svg" type="image/x-icon" />
+</head>
+
+<body>
+  <div class="navbar">
+    <div class="logo"> <a href="main.html"><img src="/PHOTO/logo.png" alt="" /></a></div>
+    <a href="watches.html">Часы</a>
+    <a href="#collaborations">Коллаборации</a>
+    <div class="dropdown">
+      <a href="#dcd">Ювелирные изделия</a>
+      <div class="dropdown-content">
+        <a href="wedding.html">Свадебные украшения</a>
+        <a href="weddingring.html">Свадебные кольца</a>
+        <a href="necklaces.html">Ожерелья</a>
+        <a href="bracelets.html">Браслеты</a>
+      </div>
+      <a href="login.html">Войти</a>
+    </div>
+
+    <div class="icons">
+      <a href="userpage.html"><img src="./ICON/profile.png" alt="Профиль" /></a>
+      <!-- Кнопка для открытия корзины -->
+      <button id="openCartButton">
+        <img src="./ICON/cart.png" alt="Корзина" />
+      </button>
+      <a href="favorite.html"><img src="./ICON/favorite.png" alt="Избранное" /></a>
+    </div>
+  </div>
+
+  <link rel="stylesheet" href="./CSS/container.css" />
+  <!-- Баннер с кнопками -->
+  <div class="banner-container">
+    <button class="banner-button banner-button-left" onclick="scrollBanner(-1)">
+      ❮
+    </button>
+    <div class="banner">
+      <img src="./PHOTO/banner1.jpg" />
+      <img src="./PHOTO/banner2.jpg" />
+      <img src="./PHOTO/banner3.jpg" />
+      <!-- Добавьте сколько угодно изображений -->
+    </div>
+    <button class="banner-button banner-button-right" onclick="scrollBanner(1)">
+      ❯
+    </button>
+  </div>
+
+  <!-- новый блок для текста и изображения -->
+  <div class="content">
+    <div class="text">
+      <h1>Ваш уникальный стиль</h1>
+      <strong>В нашем ассортименте представлены абсолютно уникальные ювелирные
+        украшения, созданные с особым вниманием к деталям</strong>
+      <strong>Мы стремимся подчеркнуть индивидуальность каждого клиента, предлагая
+        эксклюзивные дизайны, которые отражают их неповторимый стиль</strong>
+    </div>
+    <div class="image">
+      <img src="./PHOTO/ex.png" />
+    </div>
+  </div>
+
+  <!-- новый блок для текста и изображения -->
+  <div class="content">
+    <div class="image">
+      <img src="./PHOTO/ex2.png" />
+    </div>
+    <div class="text">
+      <h1>Твоя история в драгоценностях</h1>
+      <strong>Наши ювелирные изделия не просто украшения — они воплощают в себе
+        уникальные моменты и события из вашей жизни</strong>
+      <strong>Каждое украшение становится неотъемлемой частью вашей истории,
+        сотканной из блестящих драгоценностей</strong>
+    </div>
+  </div>
+
+  <!-- новый блок для текста и изображения -->
+  <div class="content">
+    <div class="text">
+      <h1>Кастомная ювелирная магия</h1>
+      <strong>Мы верим, что особенные моменты в жизни заслуживают вечных
+        украшений</strong>
+      <strong>Наши кастомные ювелирные изделия созданы с магией, которая делает
+        каждый момент неповторимым. Носите с собой частичку волшебства</strong>
+    </div>
+    <div class="image">
+      <img src="./PHOTO/ex3.png" />
+    </div>
+  </div>
+
+  <!-- Всплывающее окно корзины -->
+  <div id="cartModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Корзина</h2>
+      <!-- Содержимое корзины будет здесь -->
+      <a href="checkout.html" class="checkout-button">Оформить заказ</a>
+    </div>
+  </div>
+
+  <script src="./JS/script.js" defer></script>
+  <footer class="footer">
+    <div class="footer-content">
+      <nav class="footer-nav">
+        <a href="watches.html">Часы</a>
+        <a href="#collaborations">Коллаборации</a>
+        <a href="wedding.html">Свадебные украшения</a>
+        <a href="weddingring.html">Свадебные кольца</a>
+        <a href="necklaces.html">Ожерелья</a>
+        <a href="bracelets.html">Браслеты</a>
+      </nav>
+      <p>Copyright &copy; 2024 LuxeCraft</p>
+    </div>
+  </footer>
+</body>
+
+</html>

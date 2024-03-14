@@ -1,0 +1,111 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    text-align: center; /* Центрирование содержимого по горизонтали */
+}
+
+h1 {
+    color: #333;
+}
+
+#favorites-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#favorites-table th,
+#favorites-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#favorites-table th {
+    background-color: #f2f2f2;
+}
+
+#favorites-table td {
+    text-align: left;
+}
+
+#favorites-table button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 2px;
+    cursor: pointer;
+}
+body {
+    background-image: url('../PHOTO/90684.jpg');
+    background-size: cover;
+    color: #000000;
+    font-family: Arial, sans-serif;
+    background-attachment: fixed;
+  }
+  
+  .navbar {
+    background-color: rgba(0, 0, 0, 0.315);
+    overflow: hidden;
+    text-align: center;
+    border-radius: 15px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 20px 0; 
+  }
+  
+  .navbar a {
+    display: inline-block;
+    color: #000000;
+    text-align: center;
+    padding: 20px 16px; 
+    text-decoration: none;
+    transition: color 0.3s;
+    font-family: Arial, sans-serif;
+    white-space: nowrap;
+  }
+  
+  .navbar a:hover {
+    color: #cd9b1d;
+    background-color: transparent;
+  }
+  
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    text-align: center; 
+    left: 50%; 
+    transform: translateX(-50%); 
+  }
+  
+  .dropdown-content a {
+    color: #f2f2f2;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: rgba(7, 5, 0, 0.877);
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  
+  .icons img {
+    width: 20px; 
+    height: auto; 
+  }

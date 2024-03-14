@@ -1,0 +1,251 @@
+body {
+    background-image: url('../PHOTO/90684.jpg');
+    background-size: cover;
+    color: #000000;
+    font-family: Arial, sans-serif;
+    background-attachment: fixed;
+}
+.logo {
+    margin-right: 5px; /* Поместить лого в левый угол */
+}
+
+.logo img {
+    width: 125px; /* Устанавливаем ширину */
+    height: auto; /* Автоматическая высота для сохранения пропорций */
+}
+
+
+.navbar {
+    height: 65px;
+    background-color: rgba(0, 0, 0, 0.315);
+    overflow: hidden;
+    text-align: center;
+    border-radius: 15px;
+    display: flex;
+    /* Добавляем свойство display: flex; */
+    justify-content: center;
+    /* Выравниваем элементы по центру горизонтально */
+    align-items: center;
+    /* Выравниваем элементы по центру вертикально */
+    padding: 20px 0;
+    /* Увеличиваем верхний и нижний отступ */
+}
+
+.navbar a {
+    /* Оставляем ваши текущие стили для ссылок */
+    display: inline-block;
+    color: #000000;
+    text-align: center;
+    padding: 20px 16px;
+    /* Увеличиваем верхний и нижний отступ */
+    text-decoration: none;
+    transition: color 0.3s;
+    font-family: Arial, sans-serif;
+    white-space: nowrap;
+}
+
+.navbar a:hover {
+    color: #cd9b1d;
+    background-color: transparent;
+}
+
+
+.slideshow-container {
+    width: 1000px;
+    position: relative;
+    margin: auto;
+    border-radius: 15px; /* Добавляем закругление углов */
+    width: 100%; 
+}
+
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    width: 100%;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+
+}
+
+.prev {
+    left: 0;
+    transform: translate(0, -50%);
+}
+
+.next {
+    right: 0;
+    transform: translate(0, -50%);
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+
+}
+
+.text {
+    max-width: 60%;
+    text-align: center;
+}
+
+.text h1 {
+    font-size: 3em;
+}
+
+.text strong {
+    font-size: 1.2em;
+}
+
+.image img {
+    max-width: 100%;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    text-align: center;
+    /* Center the text within the dropdown */
+    left: 54%;
+    /* Position it 50% from the left edge of the page */
+    transform: translateX(-50%);
+    /* Center it horizontally */
+}
+
+.dropdown-content a {
+    color: #f2f2f2;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: rgba(7, 5, 0, 0.877);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.icons img {
+    width: 20px;
+    /* Устанавливаем новую ширину иконки */
+    height: auto;
+    /* Сохраняем соотношение сторон */
+}
+
+/* Стили для всплывающего окна */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius:  15px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    position: relative; /* Добавляем относительное позиционирование */
+    border-radius:  15px;
+}
+
+.close {
+    color: #5f0000;
+    position: absolute; /* Позиционируем крестик абсолютно внутри окна */
+    top: 10px;
+    right: 20px;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Стили для кнопки "Оформить заказ" */
+.checkout-button {
+    display: block;
+    width: 200px; /* Ширина кнопки */
+    margin: 20px auto; /* Выравнивание по центру */
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+/* Добавляем стили для кнопки корзины */
+#openCartButton {
+    border: none;
+    /* Убираем границы кнопки */
+    background-color: transparent;
+    /* Делаем фон прозрачным */
+    cursor: pointer;
+    /* Добавляем курсор указывающий на возможность взаимодействия */
+    outline: none;
+    /* Убираем контур вокруг кнопки при фокусировке */
+}
+
+.footer {
+    background-color: rgba(0, 0, 0, 0.315);
+    overflow: hidden;
+    text-align: center;
+    border-radius: 15px;
+    padding: 20px 0;
+    color: #000000;
+    font-family: Arial, sans-serif;
+}
+
+.footer a {
+    display: inline-block;
+    color: #000000;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-family: Arial, sans-serif;
+}
+
+.footer a:hover {
+    color: #cd9b1d;
+    background-color: transparent;
+}

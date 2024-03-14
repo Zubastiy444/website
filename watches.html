@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Часы</title>
+    <link rel="stylesheet" href="./CSS/stylewatches.css">
+    <link rel="icon" href="./ICON/icon.svg" type="image/x-icon">
+</head>
+
+<body>
+    <div class="snow">
+        <div>
+            <div class="navbar">
+                <a href="watches.html">Часы</a>
+                <a href="main.html">Главная</a>
+                <a href="#collaborations">Коллаборации</a>
+                <div class="dropdown">
+                    <a href="#dcd">Ювелирные изделия</a>
+                    <div class="dropdown-content">
+                        <a href="wedding.html">Свадебные украшения</a>
+                        <a href="weddingring.html">Свадебные кольца</a>
+                        <a href="necklaces.html">Ожерелья</a>
+                        <a href="bracelets.html">Браслеты</a>
+                    </div>
+                </div>
+                <div class="icons">
+                    <a href="#cart"><img src="./ICON/cart.png" alt="Корзина"></a>
+                    <a href="favorite.html"><img src="./ICON/favorite.png" alt="Избранное"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <div class="cards">
+            <div class="card">
+                <div class="card__top">
+                    <a href="#" class="card__image">
+                        <img src="./PHOTO/watch1.png">
+                    </a>
+                </div>
+
+                <div class="card__bottom">
+                    <a text class="card__title">
+                        Rolex Datejust Pearlmaster 81339
+                    </a>
+                    <div class="card__prices">
+                        <div class="card__price card__price--common">6 300 000</div>
+                    </div>
+
+                    <button class="card__add">Купить</button>
+                    <button onclick="addToFavorites('Rolex Datejust Pearlmaster 81339', 6300000)">Добавить в избранное</button>
+                </div>
+
+            </div>
+
+            <!-- Карточка  2 -->
+            <div class="card">
+                <!-- Верхняя часть -->
+                <div class="card__top">
+                    <!-- Изображение-ссылка товара -->
+                    <a href="#" class="card__image">
+                        <img src="./PHOTO/watch2.png">
+                    </a>
+                </div>
+                <!-- Нижняя часть -->
+                <div class="card__bottom">
+                    <!-- Ссылка-название товара -->
+                    <a text="#" class="card__title">
+                        Bvlgari Octo   L’ Originale LimitedEdition
+                    </a>
+                    <div class="card__prices">
+                        <div class="card__price card__price--common">3 000 000</div>
+                    </div>
+                    <!-- Кнопка добавить в корзину -->
+                    <button class="card__add">Купить</button>
+                    <button onclick="addToFavorites('Bvlgari Octo   L’ Originale LimitedEdition', 3000000)">Добавить в избранное</button>
+                    <!-- Цены на товар (с учетом скидки и без)-->
+
+                </div>
+            </div>
+
+            <!-- Добавленные карточки товаров пиццы -->
+            <!-- Карточка  3 -->
+            <div class="card">
+                <!-- Верхняя часть -->
+                <div class="card__top">
+                    <!-- Изображение-ссылка товара -->
+                    <a href="#" class="card__image">
+                        <img src="./PHOTO/watch3.png">
+                    </a>
+                </div>
+                <!-- Нижняя часть -->
+                <div class="card__bottom">
+                    <!-- Название товара -->
+                    <a text="#" class="card__title">
+                        TAG Heuer Aquaracer Professional 300
+                    </a>
+                    <div class="card__prices">
+                        <div class="card__price card__price--common">417 000</div>
+                    </div>
+                    <!-- Кнопка добавить в корзину -->
+                    <button class="card__add">Купить</button>
+                    <button onclick="addToFavorites('TAG Heuer Aquaracer Professional 300', 417000)">Добавить в избранное</button>
+
+                    <!-- Цена товара -->
+
+                </div>
+            </div>
+
+            <!-- Карточка пиццы 4 -->
+            <div class="card">
+                <div class="card__top">
+                    <a href="#" class="card__image">
+                        <img src="./PHOTO/watch4.png">
+                    </a>
+                </div>
+                <div class="card__bottom">
+                    <a text="#" class="card__title">
+                        Hublot Big Bang Steel Diamonds
+                    </a>
+                    <div class="card__prices">
+                        <div class="card__price card__price--common">700 000</div>
+                    </div>
+                    <button class="card__add">Купить</button>
+                    <button onclick="addToFavorites('Hublot Big Bang Steel Diamonds', 700000)">Добавить в избранное</button>
+
+                </div>
+            </div>
+
+            <!-- Карточка  5 -->
+            <div class="card">
+                <div class="card__top">
+                    <a href="#" class="card__image">
+                        <img src="./PHOTO/watch5.png">
+                    </a>
+                </div>
+                <div class="card__bottom">
+                    <a text="#" class="card__title">
+                        TUDOR Royal M28503-0008
+                    </a>
+                    <div class="card__prices">
+                        <div class="card__price card__price--common">320 000</div>
+                    </div>
+                    <button class="card__add">Купить</button>
+                    <button onclick="addToFavorites('TUDOR Royal M28503-0008', 320000)">Добавить в избранное</button>
+
+                </div>
+            </div>
+
+            <!-- Карточка  6 -->
+            <div class="card">
+                <div class="card__top">
+                    <a href="#" class="card__image">
+                        <img src="./PHOTO/watch6.png">
+                    </a>
+                </div>
+                <div class="card__bottom">
+                    <a text="#" class="card__title">
+                        Santos De Cartier
+                    </a>
+                    <div class="card__prices">
+                        <div class="card__price card__price--common">810 000</div>
+                    </div>
+                    <button class="card__add">Купить</button>
+                    <button onclick="addToFavorites('Santos De Cartier', 810000)">Добавить в избранное</button>
+
+                </div>
+            </div>
+
+            <!-- Карточка  7 -->
+            <div class="card">
+                <div class="card__top">
+                    <a href="#" class="card__image">
+                        <img src="./PHOTO/watch7.png">
+                    </a>
+                </div>
+                <div class="card__bottom">
+                    <a text="#" class="card__title">
+                        Bell & Ross BR 05 Diamond
+                    </a>
+                    <div class="card__prices">
+                        <div class="card__price card__price--common">800 000</div>
+                    </div>
+                    <button class="card__add">Купить</button>
+                    <button onclick="addToFavorites('Bell & Ross BR 05 Diamond', 800000)">Добавить в избранное</button>
+
+                </div>
+            </div>
+
+            <!-- Карточка  8 -->
+            <div class="card">
+                <div class="card__top">
+                    <a href="#" class="card__image">
+                        <img src="./PHOTO/watch8.png">
+                    </a>
+                </div>
+                <div class="card__bottom">
+                    <a text="#" class="card__title">
+                        Omega De Ville Prestige
+                    </a>
+                    <div class="card__prices">
+                        <div class="card__price card__price--common">705 000</div>
+                    </div>
+                    <button class="card__add">Купить</button>
+                    <button onclick="addToFavorites('Omega De Ville Prestige', 705000)">Добавить в избранное</button>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="JS/watch.js"></script>

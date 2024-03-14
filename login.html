@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Вход в личный кабинет</title>
+  <link rel="stylesheet" href="./CSS/styles.css">
+</head>
+
+<body>
+  <video id="background-video" loop muted autoplay>
+    <source src="./MP4/jewelry.mp4" type="video/mp4">
+    <!-- Здесь вы можете добавить дополнительные форматы видео для поддержки разных браузеров -->
+  </video>
+  <div class="form-box">
+    <div class="form-value">
+      <form action="">
+        <h2>Вход</h2>
+        <div class="inputbox">
+          <ion-icon name="mail-outline"></ion-icon>
+          <input type="email" required>
+          <label for="">Логин</label>
+        </div>
+        <div class="inputbox">
+          <ion-icon name="lock-closed-outline"></ion-icon>
+          <input type="password" required>
+          <label for="">Пароль</label>
+        </div>
+        <div class="forget">
+          <!-- <label>
+            <input type="checkbox"> Запомнить меня
+          </label> -->
+          <label>
+            <a href="#">Забыли пароль?</a>
+          </label>
+        </div>
+        <button>Войти</button>
+        <div class="register">
+          <p>Нет аккаунта? <a href="registr.html"> Зарегистрироваться</a></p>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src='https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js'></script>
+  <script src='https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js'></script>
+</body>
+
+</html>

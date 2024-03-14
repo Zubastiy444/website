@@ -1,0 +1,189 @@
+.navbar {
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    text-align: center;
+}
+
+.navbar a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-family: Arial, sans-serif;
+}
+
+.navbar a:hover {
+    color: #cd9b1d;
+    background-color: transparent;
+}
+
+body {
+    background-image: url('../PHOTO/bg.jpg');
+}
+
+    .card {
+    width: 225px;
+    min-height: 400px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    transition: 0.2s;
+    position: relative;
+  }
+  
+  .card:hover {
+    box-shadow: 4px 8px 16px rgba(255, 102, 51, 0.2);
+  }
+  
+  .card__top {
+    flex: 0 0 220px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .card__image {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .card__image>img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: 0.2s;
+  }
+
+  .card__label {
+    padding: 4px 8px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: #990808;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+  }
+  
+  .card__bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0 1 auto;
+    padding: 5px;
+  }
+  
+  .card__prices {
+    display: flex;
+    margin-bottom: 10px;
+    flex: 0 0 50%;
+  }
+  
+  .card__price::after {
+    content: "₽";
+    margin-left: 4px;
+    position: relative;
+  }
+  
+  .card__price--discount {
+    font-weight: 700;
+    font-size: 19px;
+    color: #414141;
+    display: flex;
+    flex-wrap: wrap-reverse;
+  }
+  
+
+  
+  .card__price--common {
+    font-weight: 400;
+    font-size: 17px;
+    color: #cd9b1d;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: flex-end;
+  }
+
+  .card__title {
+    display: block;
+    margin-top: -10px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 150%;
+    color: #cd9b1d;
+    margin-bottom: 30px;
+  }
+  
+  .card__title:hover {
+    color: #990808;
+  }
+  
+  .card__add {
+    display: block;
+    width: 100%;
+    font-weight: 400;
+    font-size: 17px;
+    color: #cd9b1d;;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #cd9b1d;;
+    border-radius: 4px;
+    transition: 0.2s;
+
+    margin-top: 25px;
+    margin-bottom: 10px;
+  }
+  
+  .card__add:hover {
+    border: 1px solid #cd9b1d;;
+    background-color: #cd9b1d;;
+    color: #000000;
+  }
+  
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 225px);
+    width: 100%;
+    max-width: 1000px;
+    justify-content: center;
+    justify-items: center;
+    column-gap: 30px;
+    row-gap: 40px;
+    margin: 20px auto; /* Добавлен отступ внизу и сверху */
+    align-items: flex-start;
+  }
+
+/* Добавьте эти стили в ваш файл стилей, например, в braceletsstyle.css */
+
+.simple-banner-container {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 20px; /* Добавьте отступ сверху, например, 20px */
+  border-radius: 10px; /* Добавьте закругление углов */
+  max-width: auto; /* Задайте фиксированную максимальную ширину */
+  margin-left: auto; /* Центрируйте контейнер по горизонтали */
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.simple-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 700px; /* Установите желаемую высоту баннера */
+  overflow: hidden;
+}
+
+.simple-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill; /* Растягиваем изображение для заполнения контейнера */
+}

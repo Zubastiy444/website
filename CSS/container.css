@@ -1,0 +1,39 @@
+.banner-container {
+    position: relative;
+    width: 100%;
+    max-width: 1500px;
+    max-height: 600px;
+    margin: 50px auto 0;
+    overflow: hidden;
+}
+
+.banner {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Increased duration to 0.5s */
+}
+
+.banner img {
+    width: 1600px;
+    height: 700px;
+    
+}
+
+.banner-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    padding: 10px 20px;
+}
+
+.banner-button-left {
+    left: 0;
+}
+
+.banner-button-right {
+    right: 0;
+}
